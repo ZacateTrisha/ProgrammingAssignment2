@@ -3,22 +3,22 @@
 
 ## Write a short comment describing this function
 
-buildCacheMatrix <- function(j= matrix()) {
-        qwerty <- NULL
-        asdf<- function(k){
+buildCacheMatrix <- function(j= matrix(sample(12:25,27),28,29) {
+        uno <- NULL
+        iggy<- function(k){
                 j<<-k
                 qwerty <<- NULL
                 
                
 
 }
-        pop<- function ()j
-        funk<- function(inverse) qwerty<<- inverse
-        bet<- function () qwerty
+        uno<- function ()j
+        iggy<- function(solve) uno<<- inverse
+        franky<- function () iggy
         list(set = set,
              get = get,
-             setInverse = setInverse
-             getInverse = getInverse
+             setmean = setmean
+             getmean= getmean
              
 
 
@@ -26,7 +26,7 @@ buildCacheMatrix <- function(j= matrix()) {
 
 cacheSolve <- function(k, ...) {
         ## Return a matrix that is the inverse of 'x'
-        buff<- k$getmn()
+        buff<- k$getmean()
         if (!is.null(qwerty)) {
                 memo("getting cached data")
                 return(qwerty)
