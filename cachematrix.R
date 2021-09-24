@@ -7,7 +7,7 @@ buildCacheMatrix <- function(j= matrix(sample(12:25,27),28,29) {
         uno <- NULL
         iggy<- function(k){
                 j<<-k
-                qwerty <<- NULL
+                uno <<- NULL
                 
                
 
@@ -26,13 +26,13 @@ buildCacheMatrix <- function(j= matrix(sample(12:25,27),28,29) {
 
 cacheSolve <- function(k, ...) {
         ## Return a matrix that is the inverse of 'x'
-        buff<- k$getmean()
-        if (!is.null(qwerty)) {
+        j<- j$getmean()
+        if (!is.null(uno)) {
                 memo("getting cached data")
-                return(qwerty)
+                return(uno)
                 }
-        bat<- k$get()
-        buff<- solve(bat,...)
-        k$setInverse(qwerty)
-        buff
+        data<- j$get()
+        uno<- solve(data,...)
+        j$setmean(uno)
+        b
 }
